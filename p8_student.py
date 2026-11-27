@@ -1,0 +1,11 @@
+def remove_duplicates(lst):
+    result = []
+    for x in lst:
+        if x not in result:
+            result.append(x)
+    return result
+
+print(remove_duplicates([1, 2, 2, 3, 1]))
+print(remove_duplicates([]))
+print(remove_duplicates([5]))
+print(remove_duplicates([1, 1, 1]))
